@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Trò Chơi: Rắn Săn Mồi
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body class="trang-chu">
+  <header class="thanh-dau">
+   <div class="ten-game">
+    Trò Chơi: Rắn Săn Mồi
+   </div>
+   <nav>
+    <a href="index.html">
+     Trang chủ
+    </a>
+    <a href="#gioi-thieu">
+     Giới thiệu
+    </a>
+   </nav>
+  </header>
+  <main class="man-hinh-chu">
+   <section aria-hidden="true" class="minh-hoa-ran">
+    <div class="anh-sang anh-sang-1">
+    </div>
+    <div class="anh-sang anh-sang-2">
+    </div>
+    <div class="anh-sang anh-sang-3">
+    </div>
+    <svg class="ran-svg" viewbox="0 0 840 500" xmlns="http://www.w3.org/2000/svg">
+     <path class="bong-ran" d="M100 165 C96 205 91 245 106 272 C128 308 190 318 255 301 C330 282 350 221 330 170 C309 118 236 119 220 176 C205 231 245 268 305 255 C374 241 390 300 445 300 C510 300 531 250 520 205 C509 156 455 151 440 195 C425 240 469 271 530 260 C592 249 620 292 677 280 C735 268 738 220 785 205">
+     </path>
+     <path class="than-ran-svg" d="M100 165 C96 205 91 245 106 272 C128 308 190 318 255 301 C330 282 350 221 330 170 C309 118 236 119 220 176 C205 231 245 268 305 255 C374 241 390 300 445 300 C510 300 531 250 520 205 C509 156 455 151 440 195 C425 240 469 271 530 260 C592 249 620 292 677 280 C735 268 738 220 785 205">
+     </path>
+     <path class="than-ran-highlight" d="M100 165 C96 205 91 245 106 272 C128 308 190 318 255 301 C330 282 350 221 330 170 C309 118 236 119 220 176 C205 231 245 268 305 255 C374 241 390 300 445 300 C510 300 531 250 520 205 C509 156 455 151 440 195 C425 240 469 271 530 260 C592 249 620 292 677 280 C735 268 738 220 785 205">
+     </path>
+     <g class="dau-ran-svg">
+      <circle cx="88" cy="127" r="44">
+      </circle>
+      <circle class="mat-ran-svg" cx="74" cy="112" r="6">
+      </circle>
+      <circle class="mat-ran-svg" cx="101" cy="112" r="6">
+      </circle>
+      <path d="M68 141 Q88 156 110 141" fill="none" stroke="#153e22" stroke-linecap="round" stroke-width="5">
+      </path>
+      <path class="luoi-ran-svg" d="M108 141 L137 147 M137 147 L148 140 M137 147 L149 153" fill="none" stroke="#ef6b72" stroke-linecap="round" stroke-width="4">
+      </path>
+     </g>
+     <circle class="doan-ran" cx="102" cy="235" r="8">
+     </circle>
+     <circle class="doan-ran" cx="160" cy="308" r="8">
+     </circle>
+     <circle class="doan-ran" cx="255" cy="300" r="8">
+     </circle>
+     <circle class="doan-ran" cx="325" cy="255" r="8">
+     </circle>
+     <circle class="doan-ran" cx="220" cy="176" r="8">
+     </circle>
+     <circle class="doan-ran" cx="305" cy="255" r="8">
+     </circle>
+     <circle class="doan-ran" cx="445" cy="300" r="8">
+     </circle>
+     <circle class="doan-ran" cx="520" cy="205" r="8">
+     </circle>
+     <circle class="doan-ran" cx="440" cy="195" r="8">
+     </circle>
+     <circle class="doan-ran" cx="530" cy="260" r="8">
+     </circle>
+     <circle class="doan-ran" cx="677" cy="280" r="8">
+     </circle>
+     <circle class="doan-ran" cx="745" cy="220" r="8">
+     </circle>
+    </svg>
+    <div class="moi moi-1">
+     ♥
+    </div>
+    <div class="moi moi-2">
+     ♥
+    </div>
+    <div class="moi moi-3">
+     ♥
+    </div>
+   </section>
+   <section class="khu-dang-nhap trang-chu-form">
+    <div id="khu-chua-dang-nhap">
+     <h1>
+      Đăng nhập
+     </h1>
+     <p class="mo-ta">
+      Điều khiển chú rắn và bắt những trái tim
+     </p>
+     <form id="form-dang-nhap">
+      <label for="ten-dang-nhap">
+       Tên
+      </label>
+      <input id="ten-dang-nhap" placeholder="Nhập tên" required="" type="text"/>
+      <label for="mat-ma-dang-nhap">
+       Mật mã
+      </label>
+      <input id="mat-ma-dang-nhap" placeholder="Nhập mật mã" required="" type="password"/>
+      <button class="nut-chinh" type="submit">
+       Đăng nhập
+      </button>
+     </form>
+     <p class="thong-bao" id="thong-bao-dang-nhap">
+     </p>
+     <div class="doi-form">
+      Chưa có tài khoản?
+      <button class="nut-chu" id="nut-chuyen-dang-ky">
+       Đăng ký
+      </button>
+     </div>
+    </div>
+    <div class="an" id="khu-dang-ky">
+     <h1>
+      Đăng ký
+     </h1>
+     <p class="mo-ta">
+      Tạo tài khoản để bắt đầu chơi
+     </p>
+     <form id="form-dang-ky">
+      <label for="ten-dang-ky">
+       Tên
+      </label>
+      <input id="ten-dang-ky" placeholder="Nhập tên" required="" type="text"/>
+      <label for="mat-ma-dang-ky">
+       Mật mã
+      </label>
+      <input id="mat-ma-dang-ky" placeholder="Tạo mật mã" required="" type="password"/>
+      <label for="xac-nhan-mat-ma">
+       Nhập lại mật mã
+      </label>
+      <input id="xac-nhan-mat-ma" placeholder="Nhập lại mật mã" required="" type="password"/>
+      <button class="nut-chinh" type="submit">
+       Đăng ký
+      </button>
+     </form>
+     <p class="thong-bao" id="thong-bao-dang-ky">
+     </p>
+     <div class="doi-form">
+      Đã có tài khoản?
+      <button class="nut-chu" id="nut-chuyen-dang-nhap">
+       Đăng nhập
+      </button>
+     </div>
+    </div>
+   </section>
+  </main>
+  <section class="gioi-thieu" id="gioi-thieu">
+   <h2>
+    Giới thiệu
+   </h2>
+   <p>
+    Rắn Săn Mồi là trò chơi lấy cảm hứng từ trò chơi rắn cổ điển. Người chơi điều khiển rắn, ăn những trái tim xuất hiện trên màn hình và cố gắng đạt số điểm cao nhất.
+   </p>
+   <p>
+    Trò chơi hỗ trợ bàn phím trên máy tính và thao tác vuốt trên điện thoại.
+   </p>
+  </section>
+  <footer>
+   <p>
+    Thực hiện bởi: Nguyễn Văn Hân.
+   </p>
+   <p>
+    MSV: 2551170885
+   </p>
+   <p>
+    Lớp: 67KTPM1
+   </p>
+   <p>
+    Trường: ĐH Thuỷ Lợi
+   </p>
+  </footer>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
+

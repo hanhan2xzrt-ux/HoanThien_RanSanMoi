@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+  <title>
+   Trò chơi - Rắn Săn Mồi
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body class="trang-game">
+  <header class="thanh-game">
+   <button class="nut-nho" onclick="veNha()">
+    ← Nhà
+   </button>
+   <div class="diem-so">
+    Điểm:
+    <span id="diem">
+     0
+    </span>
+   </div>
+   <div class="cum-nut-game">
+    <button class="nut-nho" onclick="thoatTroChoi()">
+     Thoát trò chơi
+    </button>
+    <button class="nut-nho" id="nut-tam-dung" onclick="tamDung()">
+     Tạm dừng
+    </button>
+   </div>
+  </header>
+  <main class="khu-game">
+   <p class="huong-dan-game">
+    Dùng W A S D hoặc phím mũi tên, hoặc vuốt màn hình để điều khiển
+   </p>
+   <div class="khung-choi" id="khung-choi">
+    <canvas id="man-hinh-game">
+    </canvas>
+    <div class="man-ket-thuc an" id="man-choang">
+     <div class="hop-thong-bao">
+      <div class="bieu-tuong-ket-thuc" id="bieu-tuong-ket-thuc">
+       😵
+      </div>
+      <h2 id="tieu-de-ket-thuc">
+       Rắn bị choáng,
+      </h2>
+      <p id="noi-dung-ket-thuc">
+       Rắn cần nghỉ ngơi.
+      </p>
+      <div class="cac-nut-ket-thuc">
+       <button class="nut-phu" onclick="veNha()">
+        Thoát
+       </button>
+       <button class="nut-chinh" onclick="choiLai()">
+        Chơi lại
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </main>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
+

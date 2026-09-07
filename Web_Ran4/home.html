@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>
+   Nhà - Rắn Săn Mồi
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body class="trang-nha-body">
+  <header class="thanh-dau">
+   <div class="ten-game">
+    Rắn Săn Mồi
+   </div>
+   <nav>
+    <a href="home.html">
+     Nhà
+    </a>
+    <a href="history.html">
+     Lịch sử trò chơi
+    </a>
+    <a href="settings.html">
+     Cài đặt
+    </a>
+    <button class="nut-nav" onclick="dangXuat()">
+     Đăng xuất
+    </button>
+   </nav>
+  </header>
+  <main class="trang-nha">
+   <div class="loi-chao">
+    <p>
+     Chào mừng trở lại
+    </p>
+    <h1 id="ten-nguoi-choi">
+     Người chơi
+    </h1>
+    <span>
+     Vào vườn và bắt những trái tim nhé.
+    </span>
+   </div>
+   <div class="san-nha">
+    <div class="trang-tri-tim tim-nha-1">
+     ♥
+    </div>
+    <div class="trang-tri-tim tim-nha-2">
+     ♥
+    </div>
+    <svg class="ran-nha-svg" viewbox="0 0 700 330" xmlns="http://www.w3.org/2000/svg">
+     <path class="bong-ran-nha" d="M80 75 C76 108 72 140 82 161 C100 190 154 198 210 181 C270 164 290 126 275 95 C260 64 205 65 195 101 C185 136 215 157 260 150 C310 143 325 180 365 180 C415 180 430 145 422 115 C414 85 372 82 360 110 C350 140 382 161 430 154 C480 147 500 184 545 176 C595 167 605 132 645 120">
+     </path>
+     <path class="than-ran-nha" d="M80 75 C76 108 72 140 82 161 C100 190 154 198 210 181 C270 164 290 126 275 95 C260 64 205 65 195 101 C185 136 215 157 260 150 C310 143 325 180 365 180 C415 180 430 145 422 115 C414 85 372 82 360 110 C350 140 382 161 430 154 C480 147 500 184 545 176 C595 167 605 132 645 120">
+     </path>
+     <path class="highlight-ran-nha" d="M80 75 C76 108 72 140 82 161 C100 190 154 198 210 181 C270 164 290 126 275 95 C260 64 205 65 195 101 C185 136 215 157 260 150 C310 143 325 180 365 180 C415 180 430 145 422 115 C414 85 372 82 360 110 C350 140 382 161 430 154 C480 147 500 184 545 176 C595 167 605 132 645 120">
+     </path>
+     <g class="dau-ran-nha">
+      <circle cx="72" cy="55" r="38">
+      </circle>
+      <circle class="mat-nha" cx="60" cy="42" r="5">
+      </circle>
+      <circle class="mat-nha" cx="84" cy="42" r="5">
+      </circle>
+      <path d="M55 68 Q72 80 91 67" fill="none" stroke="#173d22" stroke-linecap="round" stroke-width="4">
+      </path>
+      <path d="M91 67 L116 72 M116 72 L127 66 M116 72 L127 78" fill="none" stroke="#ef6b72" stroke-linecap="round" stroke-width="3.5">
+      </path>
+     </g>
+     <g class="hoa-tiet-nha">
+      <circle cx="92" cy="145" r="6">
+      </circle>
+      <circle cx="155" cy="194" r="6">
+      </circle>
+      <circle cx="255" cy="150" r="6">
+      </circle>
+      <circle cx="325" cy="178" r="6">
+      </circle>
+      <circle cx="365" cy="180" r="6">
+      </circle>
+      <circle cx="420" cy="115" r="6">
+      </circle>
+      <circle cx="460" cy="155" r="6">
+      </circle>
+      <circle cx="545" cy="176" r="6">
+      </circle>
+      <circle cx="600" cy="145" r="6">
+      </circle>
+     </g>
+    </svg>
+   </div>
+   <button class="nut-bat-dau" onclick="batDauGame()">
+    BẮT ĐẦU
+   </button>
+   <div class="cac-lua-chon">
+    <a class="o-lua-chon" href="history.html">
+     <strong>
+      Lịch sử trò chơi
+     </strong>
+     <span>
+      Xem điểm và thời gian các ván đã chơi
+     </span>
+    </a>
+    <a class="o-lua-chon" href="settings.html">
+     <strong>
+      Cài đặt
+     </strong>
+     <span>
+      Điều chỉnh màu sắc, độ sáng và âm thanh
+     </span>
+    </a>
+   </div>
+  </main>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
+

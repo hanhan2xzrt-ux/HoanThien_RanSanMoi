@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="vi">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>
+   Cài đặt - Rắn Săn Mồi
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="thanh-dau">
+   <div class="ten-game">
+    Rắn Săn Mồi
+   </div>
+   <nav>
+    <a href="home.html">
+     Nhà
+    </a>
+    <a href="history.html">
+     Lịch sử trò chơi
+    </a>
+    <button class="nut-nav" onclick="dangXuat()">
+     Đăng xuất
+    </button>
+   </nav>
+  </header>
+  <main class="trang-noi-dung">
+   <h1>
+    Cài đặt
+   </h1>
+   <p class="mo-ta">
+    Tùy chỉnh khu vườn và trải nghiệm chơi
+   </p>
+   <div class="bang-cai-dat">
+    <div class="nhom-cai-dat">
+     <h2>
+      Màu sắc
+     </h2>
+     <div class="dong-cai-dat">
+      <div>
+       <strong>
+        Màu sắc rắn
+       </strong>
+       <span>
+        Chọn màu cho chú rắn
+       </span>
+      </div>
+      <div class="chon-mau-wrap">
+       <div class="mau-mau" id="mau-ran-mau">
+       </div>
+       <select id="chon-mau-ran" onchange="doiMauRan(this.value)">
+        <option value="tim">
+         Tím
+        </option>
+        <option value="do">
+         Đỏ
+        </option>
+        <option value="cam">
+         Cam
+        </option>
+        <option value="vang">
+         Vàng
+        </option>
+        <option value="hong">
+         Hồng
+        </option>
+        <option value="xanh-la">
+         Xanh lá
+        </option>
+        <option value="xanh-bien">
+         Xanh biển
+        </option>
+        <option value="nau">
+         Nâu
+        </option>
+        <option value="den">
+         Đen
+        </option>
+        <option value="trang">
+         Trắng
+        </option>
+       </select>
+      </div>
+     </div>
+     <div class="dong-cai-dat">
+      <div>
+       <strong>
+        Màu sắc vườn
+       </strong>
+       <span>
+        Chọn màu khu vực chơi
+       </span>
+      </div>
+      <div class="chon-mau-wrap">
+       <div class="mau-mau" id="mau-vuon-mau">
+       </div>
+       <select id="chon-mau-vuon" onchange="doiMauVuon(this.value)">
+        <option value="tim">
+         Tím
+        </option>
+        <option value="do">
+         Đỏ
+        </option>
+        <option value="cam">
+         Cam
+        </option>
+        <option value="vang">
+         Vàng
+        </option>
+        <option value="hong">
+         Hồng
+        </option>
+        <option value="xanh-la">
+         Xanh lá
+        </option>
+        <option value="xanh-bien">
+         Xanh biển
+        </option>
+        <option value="nau">
+         Nâu
+        </option>
+        <option value="den">
+         Đen
+        </option>
+        <option value="trang">
+         Trắng
+        </option>
+       </select>
+      </div>
+     </div>
+     <div class="dong-cai-dat">
+      <div>
+       <strong>
+        Màu sắc giao diện
+       </strong>
+       <span>
+        Chọn màu nền và giao diện
+       </span>
+      </div>
+      <div class="chon-mau-wrap">
+       <div class="mau-mau" id="mau-giao-dien-mau">
+       </div>
+       <select id="chon-mau-giao-dien" onchange="doiMauGiaoDien(this.value)">
+        <option value="tim">
+         Tím
+        </option>
+        <option value="do">
+         Đỏ
+        </option>
+        <option value="cam">
+         Cam
+        </option>
+        <option value="vang">
+         Vàng
+        </option>
+        <option value="hong">
+         Hồng
+        </option>
+        <option value="xanh-la">
+         Xanh lá
+        </option>
+        <option value="xanh-bien">
+         Xanh biển
+        </option>
+        <option value="nau">
+         Nâu
+        </option>
+        <option value="den">
+         Đen
+        </option>
+        <option value="trang">
+         Trắng
+        </option>
+       </select>
+      </div>
+     </div>
+    </div>
+    <div class="nhom-cai-dat">
+     <h2>
+      Độ sáng
+     </h2>
+     <div class="dong-cai-dat-doc">
+      <div class="hang-cai-dat">
+       <div>
+        <strong>
+         Chế độ
+        </strong>
+        <span id="chu-do-sang">
+         Tối
+        </span>
+       </div>
+       <button class="nut-bat-tat" id="nut-do-sang" onclick="doiCheDoSang()">
+        Tối
+       </button>
+      </div>
+      <input class="thanh-keo" id="thanh-do-sang" max="115" min="45" oninput="doiDoSang(this.value)" type="range" value="80"/>
+      <div class="nhan-thanh">
+       <span>
+        Tối
+       </span>
+       <span>
+        Sáng
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="nhom-cai-dat">
+     <h2>
+      Âm thanh
+     </h2>
+     <div class="dong-cai-dat-doc">
+      <div class="hang-cai-dat">
+       <div>
+        <strong>
+         Âm thanh trò chơi
+        </strong>
+        <span id="chu-am-thanh">
+         Đang bật
+        </span>
+       </div>
+       <button class="nut-bat-tat" id="nut-am-thanh" onclick="doiAmThanh()">
+        Đang bật
+       </button>
+      </div>
+      <input class="thanh-keo" id="thanh-am-luong" max="100" min="0" oninput="doiAmLuong(this.value)" type="range" value="35"/>
+      <div class="nhan-thanh">
+       <span>
+        Nhỏ
+       </span>
+       <span>
+        Lớn
+       </span>
+      </div>
+     </div>
+    </div>
+   </div>
+   <button class="nut-phu" onclick="veNha()">
+    Quay lại
+   </button>
+   <div class="thong-tin-tac-gia">
+    Email liên hệ tác giả:
+    <a href="mailto:hannguyen2xzrt@gmail.com">
+     hannguyen2xzrt@gmail.com
+    </a>
+   </div>
+  </main>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
+
